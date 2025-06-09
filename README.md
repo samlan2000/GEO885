@@ -1,2 +1,5 @@
-# GEO885
-GEO885: Detecting unusual time gaps in AIS data in the Brest Maritime Area
+# GEO885: Detecting unusual time gaps in AIS data in the Brest Maritime Area
+
+# Abstract
+Transportation by sea is the most important means of transport in world trade. Maritime traffic is monitored using Automatic Identification System (AIS) data that is transmitted in 2 seconds to 3 minutes time intervals by ves-sels. However, vessels may deliberately turn off their AIS transmitters to conduct illegal activities, which is referred to as “going dark”. This study aims to detect and analyze unusually large AIS data gaps in the Brest Maritime Area in northern France, using data from the “Heterogeneous Integrated Dataset for Maritime Intelligence, Surveillance, and Reconnaissance,” collected between October 1, 2015, and March 31, 2016.
+We implemented a signature-based approach using python and standard libraries such as GeoPandas and MovingPandas to identify AIS gaps longer than 30 minutes, while accounting for legitimate causes such as leaving the coverage area or harbor stays. This process flagged 0.02% of data points as anomalous. We also developed visualizations to support interpretation and facilitate pattern recognition. A temporal and spatial analysis of the anomalous points did not result in any clear findings and would need to be followed up with more in-depth research.
